@@ -1,0 +1,164 @@
+
+@font-face {
+    font-family: strangerThings;
+    src: url(/fontes/StrangerThings-Regular.ttf);
+}
+
+@font-face {
+    font-family: bloodLust;
+    src: url(/fontes/BloodLust.ttf);
+}
+
+@font-face {
+    font-family:bloody;
+    src: url(/fontes/BLOODY.TTF);
+}
+
+@font-face {
+    font-family: stranger;
+    src: url(/fontes/Stranger\ Things.otf);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    max-width: 60vw;
+    margin: auto;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+
+nav{
+    height: 15vh;    
+    margin-bottom: 70px;
+    padding-top: 10px;
+    border-radius: 15px;
+    font-family: strangerThings, stranger, Arial, Helvetica, sans-serif;
+    text-align: center;    
+    font-size: 60px;
+    background-color: rgba(144, 12, 12, 0.849);
+
+}
+
+header{
+    width: 50vw;
+    height: 40vh;
+    border-radius: 10px;
+    margin:auto; 
+    position: relative;
+    box-shadow: 10px 10px 20px 2px rgba(131, 5, 5, 0.668);             
+}
+
+header img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 1000ms;
+    background-color: rgba(104, 6, 6, 0.786);
+}
+
+header img.select{
+    opacity: 1;
+}
+.miniContainer{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+aside{
+    width: 25vw;   
+}
+
+.section2{
+    box-sizing: border-box;
+    color: rgb(200, 196, 196);
+    text-align:justify;
+    font-size: 20px;
+    margin-right: 15px;
+    width: 25vw;
+}
+
+.section2 p{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    
+}
+
+.section2 p::first-letter{
+    color: red;
+    font-size: 30px;    
+}
+
+.section2 h3{
+
+    font-family: bloodLust, bloody, Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    color: rgb(193, 3, 3);
+}
+
+iframe{
+    width: 55vw;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 42px;
+    border-radius: 10px;
+    border: 2px ridge rgb(60, 58, 58);
+ }
+
+footer{
+    color: rgb(163, 158, 158);
+    height: 90px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 8px;
+    text-align: center;   
+}
+
+footer p{
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 800px){
+
+    nav{        
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    .miniContainer{               
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section2{
+        width: 40vw;
+        margin-bottom: 50px;        
+    }
+
+    aside{
+        width: 50vw;
+        overflow: hidden;        
+    }
+
+    iframe{
+        margin-left: 0px;
+        width: 58vw;
+    }
+}
