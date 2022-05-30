@@ -257,3 +257,13 @@ footer p{
     }
 
 }
+
+@media screen and (max-width: 366px){
+
+    nav{
+        font-size: 25px;
+    }
+    nav::first-letter{
+        font-size: 30px;
+    } 
+}
