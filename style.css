@@ -42,7 +42,8 @@ nav{
     padding-top: 10px;
     border-radius: 15px;
     font-family:strangerThings, stranger,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;    
+    text-align: center; 
+    line-height: 15vh;
     font-size: 60px;
     background-color: rgba(144, 12, 12, 0.849);   
 }
