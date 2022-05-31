@@ -269,8 +269,14 @@ footer p{
 @media screen and (max-width: 227px){
 
     nav{
-        font-size: 20px;
+        font-size: 20px;        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+       
     }
+
     nav::first-letter{
         font-size: 27px;
     } 
