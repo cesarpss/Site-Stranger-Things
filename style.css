@@ -256,20 +256,20 @@ footer p{
 
 }
 
-@media screen and (max-width: 366px){
+@media screen and (max-width: 400px){
 
     nav{
-        font-size: 22px;
+        font-size: 30px;
     }
     nav::first-letter{
-        font-size: 28px;
+        font-size: 38px;
     } 
 }
 
-@media screen and (max-width: 227px){
+@media screen and (max-width: 270px){
 
     nav{
-        font-size: 18px;        
+        font-size: 22px;        
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -278,6 +278,6 @@ footer p{
     }
 
     nav::first-letter{
-        font-size: 24px;
+        font-size: 30px;
     } 
 }
